@@ -1,0 +1,189 @@
+/* .campaign_section.pad-40-80 {
+    padding: 40px 0 80px;
+} */
+.social section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+ .social section:first-child {
+    padding-top: 40px;
+    padding-bottom: 80px;
+ }
+ .social section:nth-child(even) {
+    background-color: var(--theme-grey-bg);
+}
+.card_repeat_row + .card_repeat_row {
+    /* flex-direction: row-reverse; */
+}
+.campaign_section .card_social .card_content {
+    padding-left: 48px;
+}
+.card_social .card_content {
+    padding-right: 15px;
+}
+.card_social .h2_stroke {
+    text-transform: uppercase;
+}
+.card_social .h5_medium {
+    color: var(--theme-primary-color);
+}
+.card_social .h5_heavy {
+    margin-bottom: 25px;
+}
+.card_social .card_content p:nth-last-of-type(1) {
+    margin-bottom: 33px;
+}
+.card_social .card_list {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+}
+.card_social .card_list li {
+    position: relative;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.card_social .card_list .list_icon {
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #ffeeeb;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-right: 8px;
+}
+.card_social .card_list li:last-child {
+    margin-bottom: 0;
+}
+.card_social .card_content .link-btn {
+    font-size: var(--theme-body-fs);
+    font-weight: 400;
+}
+
+/* campaign section css */
+.content_section {
+    /* background-color: var(--theme-grey-bg); */
+}
+.content_section .row {
+    flex-direction: row-reverse;
+}
+
+/* analytics section css */
+.analytics_section .card_social .card_content {
+    padding-left: 48px;
+}
+
+/* media section css */
+.media_section .row {
+    flex-direction: row-reverse;
+}
+
+/* influencer section css */
+.influencer_section .card_social .card_content {
+    padding-left: 48px;
+}
+
+/* contact form */
+.audit_section .query_form .contact_heading .h4_bold span {
+    color: var(--theme-primary-color);
+}
+
+@media (max-width: 991px) {
+    .card_social .h2_stroke {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card_social {
+        margin-top: 20px;
+    }
+    .card_social .h2_stroke {
+        font-size: 40px;
+    }
+    .card_social .h5_medium {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.8px;
+        margin-bottom: 16px;
+    }
+    .card_social .h5_heavy {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.8px;
+        margin-bottom: 16px;
+    }
+    .campaign_section .card_social .card_content {
+        padding-left: 0;
+    }
+    .social section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .social section:first-child {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .analytics_section .card_social .card_content {
+        padding-left: 0;
+    }
+    .influencer_section .card_social .card_content {
+        padding-left: 0;
+    }
+    .audit_section {
+        padding: 40px 0;
+    }
+    .audit_section .query_form {
+        margin-top: 0;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
+    .award_section {
+        padding: 40px 0;
+    }
+    .award_section .section_title .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .award_section .section_title .h5_medium {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.7px;
+        color: var(--theme-black-60);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .awards_wrapper {
+        gap: 5px;
+    }
+    .awards_wrapper .awards_item {
+        padding: 5px;
+        width: 75px;
+    }
+    .tech_blogs_wrapper {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .awards_wrapper .awards_item {
+        width: 65px;
+    }
+}

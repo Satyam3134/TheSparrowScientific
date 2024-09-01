@@ -1,0 +1,35 @@
+/* our client section css */
+.our_client_section {
+    position: relative;
+    padding: 80PX 0;
+    background-color: var(--theme-grey-bg);
+}
+.our_client_section .our_client_wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.our_client_section .our_client_wrapper .h4_bold {
+    margin-bottom: 8px;
+}
+.our_client_section .our_client_wrapper p {
+    margin-bottom: 0;
+}
+.our_client_row .our_client_area {
+    margin-bottom: 24px;
+}
+
+/* address section css */
+.address_section {
+    position: relative;
+    padding: 80px 0;
+    background-color: var(--theme-grey-bg);
+}
+.address_section .address_row {
+    background-color: var(--theme-white-color);
+    padding: 32px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

@@ -1,0 +1,221 @@
+
+
+.blog_listing {
+    padding-top: 24px;
+}
+.bl_tab_detail {
+    display: none;
+}
+
+.bl_tab_detail.tab-active {
+    display: block;
+}
+
+.blog_cards_wrapper {
+    position: relative;
+}
+.blog_cards_wrapper .tech_blogs_card {    
+    margin-top: 0px;
+}
+.blog_cards_wrapper .tech_blogs_card + .tech_blogs_card {
+    margin-top: 20px;
+    margin-top: 8px;
+}
+.tab_list_wrapper {
+    padding: 20px 0;
+}
+.bl_tab_show {
+    padding: 80px 0;
+}
+.bl_tab_show .row {
+    margin-left: -32px;
+    margin-right: -32px;
+}
+.bl_tab_show .row [class*="col-"] {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.blog_img {
+    position: relative;
+    text-align: center;
+}
+.blog_img_mobile {
+    display: none;
+}
+.blog_img_mobile_1 {
+    display: none;
+}
+.blog_img_mobile_2 {
+    display: none;
+}
+.blog_img.blog_img_top {
+    margin-top: 160px;
+}
+.blog_img.blog_img_top img {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    z-index: -1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.blog_img.blog_img_bottom img {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.row.blog_cards_row {
+    column-gap: 64px;
+    /* row-gap: 64px; */
+    margin-left: 0;
+    margin-right: 0;
+    /* display: grid; */
+}
+.blog_cards_row .tech_blogs_card_wrapper {
+    /* display: block; */
+    min-height: 300px;
+    width: calc(100% - ((100% / 2) + 32px));
+    height: auto;
+    margin-bottom: 20px;
+}
+.blog_cards_row .tech_blogs_card_wrapper:nth-child(2) {
+    margin-top: 130px;
+}
+.blog_cards_row .tech_blogs_card_wrapper:not(:nth-child(2)),.blog_cards_row .tech_blogs_card_wrapper:not(:nth-child(1)) {
+    margin-top: -130px;
+}
+
+.pagination_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.pagination_ul li a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    border: 1px solid var(--theme-white-color);
+    color: var(--theme-secondary-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.98px;
+}
+.pagination_ul li a:hover {
+    background-color: var(--theme-primary-color);
+    color: var(--theme-white-color);
+}
+.pagination_ul li.active a {
+    background-color: var(--theme-primary-color);
+    color: var(--theme-white-color);
+}
+.pagination_ul .prev-arrow svg {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    width: 32px;
+    height: 32px;
+    flex: 0 0 100%;
+}
+.pagination_ul li a svg path {
+    fill: var(--theme-black-40);
+}
+.pagination_ul li.arrow a:hover,.pagination_ul li.arrow a:focus {
+    background-color: var(--theme-black-10);
+}
+.pagination_ul li.arrow a:hover svg path {
+    fill: var(--theme-black-40);
+}
+
+
+@media (max-width: 1199px) {
+    .bl_tab_show .row {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    .bl_tab_show .row [class*="col-"] {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .blog_img.blog_img_top {
+        margin-top: 130px;
+    }
+    .blog_img.blog_img_top img {
+        max-width: 60%;
+    }
+    .blog_img.blog_img_bottom img {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 991px) {
+    .blog_cards_wrapper .tech_blogs_card {
+        flex-direction: row;
+    }
+    .blog_cards_wrapper .tech_blogs_card .tech_blogs_img {
+        width: 40%;
+    }
+    .blog_cards_wrapper .tech_blogs_card .tech_blogs_detail {
+        width: 60%;
+    }
+    .blog_img_mobile {
+        display: block;
+    }
+    .blog_img_desktop_1 {
+        display: none;
+    }
+    .blog_img_mobile_1 {
+        display: none;
+    }
+    .blog_img_mobile_2 {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .bl_tab_show {
+        padding: 40px 0 0;
+    }
+    .blog_img.blog_img_top img {
+        bottom: -44px;
+    }
+    .blog_img.blog_img_bottom.blog_img_mobile_2 img {
+        max-width: 100%;
+        position: relative;
+        top: 5px;
+        left: 44%;
+    }
+}

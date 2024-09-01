@@ -1,0 +1,226 @@
+
+.design_thinking_section {
+    padding: 40px 0 80px;
+}
+.design_thinking_section .brand_block {
+    text-align: center;
+}
+.design_thinking_section .brand_block .section_title .title {
+    margin-bottom: 0;
+}
+.design_thinking_section .brand_block p {
+    margin-bottom: 40px;
+}
+.design_thinking_section .brand_block .theme-btn {
+    text-transform: uppercase;
+}
+.design_approach_section {
+    padding: 40px 0 80px;
+    position: relative;
+    background-color: var(--theme-grey-bg);
+}
+.design_approach_section .h4 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.design_approach_section .h4 span {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: var(--theme-primary-color);
+}
+.design_approach_section .design_shape {
+    position: relative;
+}
+.design_approach_section .design_shape::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    background-image: url(../images/long-arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100%;
+    width: 12px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.design_approach_section .design_thinking_row {
+    column-gap: 64px;
+    row-gap: 64px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.card_thinking {
+    position: relative;
+    padding: 24px;
+    border: 1px solid var(--theme-label-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: var(--theme-white-color);
+    min-height: 300px;
+    width: calc(100% - ((100%/2) + 32px));
+}
+.card_thinking .card_img_wrapper {
+    margin-bottom: 16px;
+}
+.card_thinking .card_img_wrapper .card_img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+.card_thinking .card_img_wrapper .card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card_thinking .h5_bold {
+    margin-bottom: 16px;
+}
+.card_thinking p {
+    margin-bottom: 0;
+}
+.card_thinking p + p {
+    margin-top: 15px;
+}
+.card_thinking:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    bottom: -40px;
+    background-image: url(../images/long-arrow-2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 100%;
+    height: 13px;
+}
+.card_thinking:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    right: -6px;
+    bottom: -40px;
+    background-image: url(../images/long-arrow-2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 100%;
+    height: 13px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.card_thinking:last-child::before {
+    display: none;
+}
+.card_thinking:nth-last-child(2)::before {
+    display: none;
+}
+
+
+
+@media (max-width: 1199px) {
+    .design_approach_section .design_thinking_row {
+        column-gap: 32px;
+        row-gap: 64px;
+    }
+    .card_thinking {
+        width: calc(100% - ((100%/2) + 16px));
+    }
+}
+@media (max-width: 767px) {
+    .design_thinking_section {
+        padding-bottom: 40px;
+    }
+    .design_thinking_section .brand_block p {
+        margin-bottom: 24px;
+    }
+    .design_approach_section {
+        padding-bottom: 40px;
+    }
+    .design_approach_section .h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .design_approach_section .h4 span {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+    }
+    .design_approach_section .design_shape::before {
+        display: none;
+    }
+    .card_thinking {
+        width: 100%;
+        padding: 18px;
+        min-height: 340px;
+    }
+    .card_thinking .card_img_wrapper .card_img {
+        width: 36px;
+        height: 36px;
+    }
+    .card_thinking .h5_bold {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.8px;
+        margin-bottom: 8px;
+    }
+    .design_approach_section .design_thinking_row {
+        column-gap: 0;
+        row-gap: 0;
+    }
+    .card_thinking_slider {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card_thinking_slider .slick-list {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-right: 13%;
+    }
+    .card_thinking_slider .slick-slide {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card_thinking_slider .slick-dots {
+        bottom: -40px;
+      }
+      .card_thinking_slider .slick-dots li {
+        margin: 0 4px;
+        width: 12px;
+        height: 12px;
+      }
+      .card_thinking_slider .slick-dots li button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: solid 1px var(--theme-black-40);
+        overflow: hidden;
+        padding: 0;
+      }
+      .card_thinking_slider .slick-dots li.slick-active button {
+        background-color: var(--theme-primary-color);
+        border-color: var(--theme-primary-color);
+      }
+      .card_thinking_slider .slick-dots li button:before {
+        display: none;
+      }
+}

@@ -1,0 +1,183 @@
+@media (min-width: 992px) {
+    .inner_header .inner_banner .inner_banner_content.career_header  {
+        padding-left: 4.167vw;
+        padding-right: 4.167vw;
+    }
+}
+@media (min-width: 1200px) {
+    .inner_header .inner_banner .inner_banner_content.career_header  {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (min-width: 1600px) {
+    .inner_header .inner_banner .inner_banner_content.career_header  {
+        padding-left: 6.77083vw;
+        padding-right: 6.77083vw;
+    }
+}
+.career_detail_header .caption_lg_bold {
+    color: var(--theme-white-color);
+}
+.career_detail_header h6.caption_lg_bold {
+    margin-bottom: 15px;
+}
+.career_detail_header .h2_stroke {
+    color: var(--theme-white-color);
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+    margin-bottom: 15px;
+}
+.career_header_list {
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+}
+.career_header_list li a {
+    padding: 5px 15px;
+    display: block;
+}
+.career_header_list li {
+    border-left: 1px solid var(--theme-white-50);
+}
+.job_profile_section {
+    padding: 40px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.job_profile_wrapper {
+    position: relative;
+    max-width: 996px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 48px 48px 0;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    box-shadow: 0px 0px 60px 0px var(--theme-black-10);
+}
+.job_profile_wrapper .h4_bold {
+    margin-bottom: 24px;
+}
+.job_profile_wrapper p {
+    margin-bottom: 0;
+}
+.job_profile_wrapper p + p {
+    margin-top: 15px;
+}
+.job_profile_wrapper ul {
+    padding-left: 28px;
+}
+.job_profile_wrapper .seperator {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.job_img_wrapper {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+.job_img_wrapper .job_img {
+    max-width: 585px;
+    z-index: 2;
+    position: relative;
+}
+.job_profile_wrapper .shapes {
+    position: absolute;
+}
+.job_profile_wrapper .shapes.shape_1 {
+    right: 25%;
+    top: 18%;
+}
+
+
+.job_contact {
+    padding-top: 0;
+}
+.job_contact .query_form {
+    padding-top: 80px;
+    margin-top: -85px;
+    position: relative;
+    z-index: 0;
+}
+@media (max-width: 991px) {
+    .career_detail_header .h2_stroke {
+        font-size: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .career_detail_header span {
+        display: none;
+    }
+    .career_detail_header .career_header_list {
+        display: none;
+    }
+    .career_detail_header .h2_stroke {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+    }
+    .career_detail_header h6.caption_lg_bold {
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0.77px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    .job_profile_section {
+        padding: 20px 0 0;
+    }
+    .job_profile_wrapper {
+        padding: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+    }
+    .job_profile_wrapper .h4_bold {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 12px;
+    }
+    .job_profile_wrapper ul {
+        padding-left: 24px;
+    }
+    .job_profile_wrapper .seperator {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .job_img_wrapper .job_img {
+        max-width: 100%;
+    }
+    .job_profile_wrapper .shapes {
+        display: none;
+    }
+    .job_contact .query_form {
+        margin-top: -67px;
+        padding-top: 50px;
+        border: 1px solid var(--theme-black-10);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
+    .job_contact {
+        padding-bottom: 40px;
+    }
+}

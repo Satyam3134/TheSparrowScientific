@@ -1,0 +1,129 @@
+
+.breadcrumb_section.cs_breadcrumb {
+    padding-top: 24px;
+}
+.cs_banner_section {
+    margin-top: 24px;
+    position: relative;
+    padding: 45px 0;
+    overflow: hidden;
+}
+.cs_banner_section .content_block {
+    max-width: 660px
+}
+.cs_banner_section .section_title .caption_lg_bold {
+    color: var(--theme-primary-color);
+    margin-bottom: 12px;
+}
+.cs_banner_section .section_title .h2 {
+    margin-bottom: 12px;
+}
+.cs_banner_section .section_title .h2 span {
+    color: var(--theme-primary-color);
+    font-weight: 700;
+}
+
+.cs_tag_item {
+    background-color: var(--theme-primary-color);
+    padding: 5px 15px 5px 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 8px;
+    max-width: 150px;
+}
+.cs_tag_item img {
+    width: 27px;
+    height: 27px;
+    flex: 0 0 auto;
+}
+.cs_tag_item p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--theme-white-color);
+    line-height: 130%;
+    margin-bottom: 0;
+}
+.cs_tag_item.cs_tag_item2 {
+    padding: 8px 15px;
+}
+.cs_tag_item.cs_tag_item2 img {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* case study about section css */
+.cs_about_section {
+    padding: 64px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--theme-primary-color);
+    color: var(--theme-white-color);
+}
+.cs_about_section p {
+    color: var(--theme-white-80);
+}
+.cs_about_section .section_title .caption_lg_bold,
+.cs_about_section .section_title .h4 {
+    margin-bottom: 4px;
+}
+
+
+/* case study challenge section css */
+.cs_challenge_section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+.cs_challenge_section .section_title .h4_bold {
+    margin-bottom: 16px;
+}
+.cs_challenge_section .section_title p {
+    margin-bottom: 0;
+}
+.cs_challenge_section .section_title p + p {
+    margin-top: 15px;
+}
+.cs_challenge_section .img_wrapper {
+    text-align: right;
+}
+.cs_challenge_section .content-row {
+    margin-top: 40px;
+}
+.cs_challenge_section .challenge_points {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+.cs_challenge_section .challenge_points > li {
+    position: relative;
+    padding-left: 50px;
+}
+.cs_challenge_section .challenge_points > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/challenge-point.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 27px;
+    height: 24px;
+}
+.cs_challenge_section .challenge_points ul {
+    list-style: disc;
+    margin: 30px 0 0;
+}
+.cs_challenge_section .challenge_points ul li {
+    
+}

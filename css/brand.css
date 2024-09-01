@@ -1,0 +1,281 @@
+/* brand section css */
+.brand_section {
+    padding: 40px 0 80px;
+}
+.brand_section .brand_block {
+    text-align: center;
+}
+.brand_section .brand_block .theme-btn {
+    text-transform: uppercase;
+}
+.brand_block .section_title .title {
+    margin-bottom: 0;
+}
+.brand_block p {
+    margin-bottom: 20px;
+}
+.brand_items_row {
+    padding-top: 80px;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.brand_items_row [class*="col-"] {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 8px;
+}
+.brand_items_row [class*="col-"]:last-child {
+    margin-bottom: 0;
+}
+.brand_items_row [class*="col-"]:nth-last-of-type(1),.brand_items_row [class*="col-"]:nth-last-of-type(2) {
+    margin-bottom: 0;
+}
+.card_brand {
+    position: relative;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    cursor: default;
+}
+.card_brand .card_body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px 24px;
+    position: relative;
+}
+.card_brand .card_icon {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+.card_brand .card_body .h6_heavy {
+    margin-bottom: 0;
+}
+.card_brand .card_body .card_heading {
+    color: var(--theme-white-color);
+}
+.card_brand .card_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.card_brand .card_img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-primary-color);
+    opacity: 0.85;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+.card_brand .card_img img {
+    width: 100%;
+}
+.card_brand:hover .card_img::before {
+    /* background-color: var(--theme-white-color); */
+}
+@media (max-width: 767px) {
+    .brand_section {
+        padding-bottom: 40px;
+    }
+    .brand_section .brand_block .theme-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .brand_items_row {
+        padding-top: 40px;
+    }
+    .card_brand .card_body .h6_heavy {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0.98px;
+        text-transform: uppercase;
+    }
+    .card_brand .card_body {
+        padding: 10px 7px 20px 14px;
+        min-height: 80px;
+        align-items: flex-start;
+    }
+    .card_brand .card_icon {
+        width: 24px;
+        height: 24px;
+        right: 7px;
+        bottom: 8px;
+    }
+    .card_brand .card_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* consulting section css */
+.consulting_section {
+    padding: 80px 0;
+    background-color: var(--theme-grey-bg);
+}
+.consulting_section .partner_content .theme-btn {
+    text-transform: uppercase;
+}
+.consulting_section .section_title {
+    padding-bottom: 80px;
+}
+.consulting_section .section_title .title {
+    margin-bottom: 8px;
+}
+.consulting_section .section_title .sub_title {
+    margin-bottom: 0;
+}
+@media (max-width: 767px) {
+    .consulting_section {
+        padding: 20px 0 40px;
+    }
+    .consulting_section .row:last-child {
+        flex-direction: column-reverse;
+    }
+    .consulting_section .section_title {
+        margin-bottom: 24px;
+        padding-bottom: 0;
+    }
+    .consulting_section .section_title .title {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .consulting_section .section_title .sub_title {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .consulting_section .partner_content {
+        margin-left: 0;
+    }
+    .consulting_section .custom-container .row {
+        flex-direction: column-reverse;
+    }
+    .about_slider {
+        margin-top: 40px;
+    }
+    
+}
+
+/* benefits section css */
+.benefits_section {
+    padding: 80px 0;
+    background-color: var(--theme-primary-color);
+}
+.benefits_section .benefits_heading {
+    text-align: center;
+}
+.benefits_section .benefits_heading .h2_stroke {
+    margin-bottom: 8px;
+    -webkit-text-stroke-color: var(--theme-white-color)
+}
+.benefits_section .benefits_heading .h5_medium {
+    color: var(--theme-white-color);
+}
+.benefit_row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.card_benefit {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+}
+.card_benefit .h2_bold {
+    color: var(--theme-white-color);
+    opacity: 0.3;
+    margin-bottom: 16px;
+}
+.card_benefit .h5_bold {
+    color: var(--theme-white-color);
+    margin-bottom: 16px;
+}
+.card_benefit p {
+    color: var(--theme-white-80);
+    margin-bottom: 0;
+}
+.benefit_action [class*="col-"] {
+    text-align: center;
+}
+.benefit_action .theme-dark-btn {
+    color: var(--theme-secondary-color);
+    gap: 6px;
+    text-transform: uppercase;
+}
+.benefit_action .theme-dark-btn span {
+    font-weight: 400;
+    text-transform: none;
+}
+
+@media (max-width: 767px) {
+    .benefits_section {
+        padding: 40px 0;
+    }
+    .benefits_section .benefits_heading .h2_stroke {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .benefits_section .benefits_heading .h5_medium {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.7px;
+        text-align: left;
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+    .card_benefit .h2_bold {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -0.64px;
+        text-transform: capitalize;
+    }
+    .card_benefit .h5_bold {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    .card_benefit {
+        padding-right: 0;
+    }
+    .benefit_row [class*="col-"] .card_benefit {
+        margin-bottom: 24px;
+    }
+    .benefit_row [class*="col-"]:last-child .card_benefit {
+        margin-bottom: 0px;
+    }
+    .benefit_row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+/* thanks section css */
+.thanks_section {
+    padding: 80px 0;
+    position: relative;
+    background-color: var(--theme-grey-bg);
+}
+.card_thanks {
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.card_thanks .card_header {
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+.card_thanks .card_header .h3_bold {
+    margin-bottom: 0;
+    color: var(--theme-primary-color);
+}
+.card_thanks .card_footer .theme-btn {
+    text-transform: uppercase;
+}
+.card_thanks p {
+    margin-bottom: 0;
+}
+.card_thanks p + p {
+    margin-top: 15px;
+}
+.card_footer {
+    margin-top: 32px;
+}
+
+@media (max-width: 767px) {
+    .thanks_section {
+        padding: 40px 0;
+    }
+    .card_thanks {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card_thanks .card_header .h3_bold,.card_thanks .card_header .h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    .card_thanks .card_header .h3 {
+        font-weight: 500;
+    }
+}
